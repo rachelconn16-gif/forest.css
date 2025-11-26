@@ -1,0 +1,24 @@
+@-moz-document domain("wolvden.com") {
+/* === Import Font (Texturina) === */
+  @import url('https://fonts.googleapis.com/css2?family=Texturina:wght@300;400;500;700&display=swap');
+
+  /* === Variables Using Your Color Palette === */
+  :root {
+    --forest1: #f5f5e8;
+    --forest2: #333d1c;
+    --forest3: #06150E;
+    --forest4: #535028;
+
+    --panel-bg: rgba(19, 22, 18, 0.35); /* 36% opacity */
+    --text-light: #f5f5e8;
+    --text-muted: #c7c7b2;
+  }
+
+  /* === Page Background Image (UPDATED) === */
+  body {
+    background: url("https://wallpapers.com/images/hd/dark-green-forest-1920-x-1200-5xzwr29uzh1qw10h.jpg")
+               no-repeat center center fixed !important;
+    background-size: cover !important;
+    font-family: 'Texturina', serif !important;
+    color: var(--text-light) !important;
+  }
