@@ -1,100 +1,75 @@
- .table {
-        
-        background-color: rgb(105, 117, 52, 0.5);
-        border: 1px solid rgb(121, 136, 59, 0.7);;
-        border-radius: 5px 5px 3px 3px;
-    }
-    
-    .table th {
-        
-       background-color: #697534;
-       border-radius: 5px 5px 0px 0px;
-       color: #a6a75f;
-    }
-    .table th a {
-        
-        font-family: 'Grenze Gotisch';
-        color: #d3ed85;
-        font-size: 20px;
-        
-    }
-    
-    #main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-7.text-center > div > a > img /* Leader Image */ {
-        
-        border-radius: 0px;
-        border: 1px solid #151a0e;
-        
-    }
-    #main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-7.text-center > div > div /* Leader Header */ {
-        
-        background-color: #222916!important;
-        border-radius: 0px;
-        border-color: #151a0e!important;
-        border: 1px solid;
-    }
-    .featured-wolf img {
-        
-       border-radius: 0px 0px;
-        border: 1px solid #151a0e; 
-        
-    }
-    .border-none .striped {
-        
-        background-color: #b3b896bc;
-        border-radius: 0px 0px 5px 5px;
-        color: #79883b;
-        
-    }
-    .table-striped tbody tr:nth-of-type(odd) {
-	background-color: #d5dabbbc;
-      
-    }
-    
-    .bottom {
-        
-        background-color: #697534!important;
-       border-radius: 0px 0px 5px 5px;
-       color: #a6a75f;
-        
-    }
-    #main > table > tbody > tr:nth-child(2) > td > div.col-xl-6.col-sm-12.order-xl-9.order-12 > table > tbody > tr:nth-child(1) > td:nth-child(2) > a /*Player Username */ {
-        
-        color: #525e2e;
-        font-family: 'Grenze Gotisch';    
-    }
-    .left {
-        background-color: #697534!important;
-    } 
-    .right {
-        background-color: rgb(105, 117, 52, 0.5)!important;
-    }
-    #main > table.table.mt-3 > tbody > tr:nth-child(2) > td.right.text-right > img /* Profile Image/Sidebar Images */ {
-        
-        border: 1px solid #151a0e;
-        border-radius: 0px;
-        
-    }
-    
-     /* ----- Wolf Icons ----- */
-    
-    
-    #main .card-body {
-        
-        border: 1px solid #151a0e;
-        border-radius: 0px;
-        background-color: #374127bc!important;
-        
-    }
-    #main > form > table > tbody > tr > td > div > div > div > div > a > div {
-        
-        border-radius: 0px!important;
-        background-color: #222916!important;
-        color: #79883b!important;
-    }
-    
-    #main > form > table > tbody > tr > td > div > div > div > div > a > img {
-        
-        border-radius: 0px!important;
-        
-    }
+/* WOLVDEN PROFILE CSS — Forest Theme (Dark Green) */
+/* Paste this into your "Den → Settings → Profile CSS" */
 
+/* ===== BACKGROUND ===== */
+body {
+    background: url('https://wallpaperbat.com/img/226887-forest-trees-nature-wallpaper-2560x1600.jpg') no-repeat center center fixed !important;
+    background-size: cover !important;
+    color: #f2f2e9 !important;
+}
+
+/* ===== TRANSPARENT GLOW BANNER ===== */
+#main h1, #main h2.page-title {
+    background: rgba(15, 40, 20, 0.45) !important;
+    padding: 12px 20px !important;
+    border-bottom: 2px solid #1e3a24 !important;
+    box-shadow: 0 0 20px #1e5c2f !important;
+    text-shadow: 0 0 10px #1e8c4f !important;
+    border-radius: 10px;
+}
+
+/* ===== PANELS / CONTAINERS ===== */
+.main, .sidebar, .box, .content, .table, .table .row, .container {
+    background: rgba(10, 30, 15, 0.55) !important;
+    border: 2px solid #194d2c !important;
+    border-radius: 20px !important;
+    box-shadow: 0 0 15px #145c33 !important;
+}
+
+/* ===== TEXT COLOR ===== */
+body, h1, h2, h3, p, a, span, div {
+    color: #f2f2e9 !important;
+}
+
+/* ===== WOLF CIRCULAR PORTRAITS ===== */
+.wolf-avatar, .lead-wolf img, img[src*="dynasty"], .featured-wolf img {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50% !important;
+    border: 4px solid #1e5c2f !important;
+    box-shadow: 0 0 20px #1e5c2f !important;
+    object-fit: cover !important;
+}
+
+/* ===== NAVIGATION HALF-OVALS ===== */
+.navbar a, .menu-item, #sidebar a[href*="overview"], #sidebar a[href*="breeding"], #sidebar a[href*="dynasty"], #sidebar a[href*="pupsitting"], #sidebar a[href*="nesting"], #sidebar a[href*="socializing"] {
+    display: inline-block !important;
+    padding: 8px 14px !important;
+    background: rgba(20, 60, 30, 0.6) !important;
+    border: 2px solid #1e5c2f !important;
+    border-radius: 0 0 40px 40px !important;
+    box-shadow: 0 0 12px #1e5c2f !important;
+    color: #f2f2e9 !important;
+    margin: 3px !important;
+}
+.navbar a:hover, .menu-item:hover, #sidebar a:hover {
+    background: rgba(25, 80, 40, 0.8) !important;
+}
+
+/* ===== STATS BARS (energy/hunger/hp/exp) ===== */
+.energyBar, .hungerBar, .hpBar, .expBar, .bar, .progress {
+    background: #0f2716 !important;
+    border-radius: 10px !important;
+    border: 1px solid #1e5c2f !important;
+    overflow: hidden !important;
+}
+.energyBar .fill, .hungerBar .fill, .hpBar .fill, .expBar .fill, .bar .fill, .progress div {
+    background: #1e8c4f !important;
+    height: 18px !important;
+    box-shadow: inset 0 0 10px #145c33 !important;
+}
+
+/* ===== ICONS — tinted green ===== */
+img.icon, .small-icon, img[src*="icon"] {
+    filter: brightness(0) saturate(100%) invert(30%) sepia(50%) saturate(500%) hue-rotate(95deg) brightness(95%) contrast(90%) !important;
+}
