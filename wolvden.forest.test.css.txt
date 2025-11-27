@@ -1,24 +1,101 @@
-@-moz-document domain("wolvden.com") {
-/* === Import Font (Texturina) === */
-  @import url('https://fonts.googleapis.com/css2?family=Texturina:wght@300;400;500;700&display=swap');
+/* === Import Font === */
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@300;400;500;700&display=swap');
 
-  /* === Variables Using Your Color Palette === */
-  :root {
-    --forest1: #f5f5e8;
-    --forest2: #333d1c;
-    --forest3: #06150E;
-    --forest4: #535028;
+/* === Color Palette === */
+:root {
+  --forest1: #5e6828;   /* Primary green */
+  --forest2: #333d1c;   /* Darker green */
+  --forest3: #131612;   /* Almost black */
+  --forest4: #535028;   /* Accent */
 
-    --panel-bg: rgba(19, 22, 18, 0.35); /* 36% opacity */
-    --text-light: #f5f5e8;
-    --text-muted: #c7c7b2;
-  }
+  --panel-bg: rgba(19, 22, 18, 0.35); /* Semi-transparent panel */
+  --text-light: #f5f5e8;  /* Light text */
+  --text-muted: #c7c7b2;  /* Muted text */
+}
 
-  /* === Page Background Image (UPDATED) === */
-  body {
-    background: url("https://wallpapers.com/images/hd/dark-green-forest-1920-x-1200-5xzwr29uzh1qw10h.jpg")
-               no-repeat center center fixed !important;
-    background-size: cover !important;
-    font-family: 'Texturina', serif !important;
-    color: var(--text-light) !important;
-  }
+/* === Global Styles === */
+body {
+  background: url("https://wallpapers.com/images/hd/dark-green-forest-1920-x-1200-5xzwr29uzh1qw10h.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Texturina', serif;
+  color: var(--text-light);
+  margin: 0;
+  padding: 0;
+}
+
+/* === Panels / Containers === */
+.container, .box, .panel, .card, .sidebar {
+  background: var(--panel-bg);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--forest4);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  color: var(--text-light);
+}
+
+/* === Headings === */
+h1, h2, h3, h4 {
+  color: var(--forest1);
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* === Paragraphs and Muted Text === */
+p, .text, small, .meta {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+/* === Links === */
+a {
+  color: var(--forest1);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: var(--forest4);
+}
+
+/* === Buttons === */
+.button, .btn, button, input[type="submit"] {
+  background: var(--forest1);
+  color: #0f130c;
+  border-radius: 6px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.button:hover, .btn:hover {
+  background: var(--forest4);
+}
+
+/* === Images with Forest Frames === */
+img {
+  max-width: 100%;
+  display: block;
+  margin: 10px 0;
+  border: 3px solid var(--forest2);
+  background: rgba(51, 61, 28, 0.45);
+  padding: 4px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* === Scrollbar Custom === */
+*::-webkit-scrollbar { width: 10px; }
+*::-webkit-scrollbar-thumb {
+  background: var(--forest1);
+  border-radius: 6px;
+}
+
+/* === Optional: Center content on page === */
+.main {
+  max-width: 1000px;
+  margin: 50px auto;
+}
