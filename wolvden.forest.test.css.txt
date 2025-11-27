@@ -1,127 +1,68 @@
-/* === Import Font === */
-@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@300;400;500;700&display=swap');
-
-/* === Color Palette === */
-:root {
-  --forest1: #5e6828;   /* Primary green */
-  --forest2: #333d1c;   /* Darker green */
-  --forest3: #131612;   /* Almost black */
-  --forest4: #535028;   /* Accent */
-
-  --panel-bg: rgba(19, 22, 18, 0.35); /* Semi-transparent panel */
-  --text-light: #f5f5e8;  /* Light text */
-  --text-muted: #c7c7b2;  /* Muted text */
+   /* --------------- SIDEBAR --------------- */
+     
+    #sidebar {
+        
+        background-color: rgb(1, 1, 1, 0)!important;   
+        
+    }
+    #sidebar .card {
+        
+       background-color: #222916;
+        border-radius: 5px;
+        border-color: #151a0e;
+        color: #525e2e;
+        
+    }
+    #sidebar h3, #sidebar h4 {
+        color: #79883b;
+        font-family: 'Grenze Gotisch';
+    }
+    #sidebar .card a {
+        color: #79883b;
+    }
+        
+    #sidebar > div.multi-column.no-gutters > div:nth-child(1) > a > div {
+        background-color: #455c1f;
+    }
+        
+     #chatMessagePinned.s-chat-message__pinned {
+        
+        background-color: #d3ed85;
+        color: #b1c27e;
+        border: none;
+    }
+     #chatMessagePinned.s-chat-message__pinned a {
+        
+        color: #b1c27e;
+          
+    }
+    #btnChatSend {
+        
+         background-color: #a6a75f!important;
+        border-color: #868838;
+        
+    }
+    #fraChatSettings i {
+        
+      color: #525e2e!important;
+    }
+   #btnToggleSidebarChat i {
+        
+        color: #525e2e!important;
+    }
+    
+     #card-user > div > div > div:nth-child(1) > div > a > img/* Border featured wolf in Sidebar */ {
+    border: 1px solid #151a0e!important;
+         border-radius: 0px!important;
+        
 }
-
-/* === Global Styles === */
-body {
-  background: url("https://wallpapers.com/images/hd/dark-green-forest-1920-x-1200-5xzwr29uzh1qw10h.jpg") no-repeat center center fixed;
-  background-size: cover;
-  font-family: 'Texturina', serif;
-  color: var(--text-light);
-  margin: 0;
-  padding: 0;
+    #card-user > div > div > div:nth-child(1) > a > img {
+        
+        border-radius: 0px!important;
+        border: 1px solid #151a0e!important;
+    }
+  
+     .card-body .w-50:first-child div /* Border featured wolf in Sidebar */ {
+    border: none !important;
+        
 }
-
-/* === Panels / Containers === */
-.container, .box, .panel, .card, .sidebar {
-  background: var(--panel-bg);
-  backdrop-filter: blur(4px);
-  border: 1px solid var(--forest4);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 15px;
-  color: var(--text-light);
-}
-
-/* === Headings === */
-h1, h2, h3, h4 {
-  color: var(--forest1);
-  font-weight: 600;
-  margin-top: 0;
-}
-
-/* === Paragraphs and Muted Text === */
-p, .text, small, .meta {
-  color: var(--text-light);
-  line-height: 1.6;
-}
-
-.muted {
-  color: var(--text-muted);
-}
-
-/* === Links === */
-a {
-  color: var(--forest1);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-a:hover {
-  color: var(--forest4);
-}
-
-/* === Buttons === */
-.button, .btn, button, input[type="submit"] {
-  background: var(--forest1);
-  color: #0f130c;
-  border-radius: 6px;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: background 0.3s;
-}
-.button:hover, .btn:hover {
-  background: var(--forest4);
-}
-
-/* === Images with Forest Frames === */
-img {
-  max-width: 100%;
-  display: block;
-  margin: 10px 0;
-  border: 3px solid var(--forest2);
-  background: rgba(51, 61, 28, 0.45);
-  padding: 4px;
-  border-radius: 10px 10px 10px 10px;
-}
-
-/* === Scrollbar Custom === */
-*::-webkit-scrollbar { width: 10px; }
-*::-webkit-scrollbar-thumb {
-  background: var(--forest1);
-  border-radius: 6px;
-}
-
-/* === Optional: Center content on page === */
-.main {
-  max-width: 1000px;
-  margin: 50px auto;
-}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forest Theme Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="main container">
-        <h1>Welcome to the Forest!</h1>
-        <p>This page is styled with a dark green forest theme, glassy panels, and elegant buttons.</p>
-
-        <div class="box">
-            <h2>Panel Example</h2>
-            <p>This is a panel with semi-transparent background and blurred backdrop.</p>
-            <button class="btn">Click Me</button>
-        </div>
-
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Forest Image">
-
-        <p class="muted">This is muted text for secondary info.</p>
-    </div>
-</body>
-</html>
-
