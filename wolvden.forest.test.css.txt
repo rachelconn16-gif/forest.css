@@ -1,5 +1,101 @@
-      
-    #main {
+ 
+    
+    .table {
         
-        background-color:rgb(82, 94, 46, 0.5)!important;
-         }
+        background-color: rgb(105, 117, 52, 0.5);
+        border: 1px solid rgb(121, 136, 59, 0.7);;
+        border-radius: 5px 5px 3px 3px;
+    }
+    
+    .table th {
+        
+       background-color: #697534;
+       border-radius: 5px 5px 0px 0px;
+       color: #a6a75f;
+    }
+    .table th a {
+        
+        font-family: 'Grenze Gotisch';
+        color: #d3ed85;
+        font-size: 20px;
+        
+    }
+    
+    #main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-7.text-center > div > a > img /* Leader Image */ {
+        
+        border-radius: 0px;
+        border: 1px solid #151a0e;
+        
+    }
+    #main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-7.text-center > div > div /* Leader Header */ {
+        
+        background-color: #222916!important;
+        border-radius: 0px;
+        border-color: #151a0e!important;
+        border: 1px solid;
+    }
+    .featured-wolf img {
+        
+       border-radius: 0px 0px;
+        border: 1px solid #151a0e; 
+        
+    }
+    .border-none .striped {
+        
+        background-color: #b3b896bc;
+        border-radius: 0px 0px 5px 5px;
+        color: #79883b;
+        
+    }
+    .table-striped tbody tr:nth-of-type(odd) {
+	background-color: #d5dabbbc;
+      
+    }
+    
+    .bottom {
+        
+        background-color: #697534!important;
+       border-radius: 0px 0px 5px 5px;
+       color: #a6a75f;
+        
+    }
+    #main > table > tbody > tr:nth-child(2) > td > div.col-xl-6.col-sm-12.order-xl-9.order-12 > table > tbody > tr:nth-child(1) > td:nth-child(2) > a /*Player Username */ {
+        
+        color: #525e2e;
+        font-family: 'Grenze Gotisch';    
+    }
+    .left {
+        background-color: #697534!important;
+    } 
+    .right {
+        background-color: rgb(105, 117, 52, 0.5)!important;
+    }
+    #main > table.table.mt-3 > tbody > tr:nth-child(2) > td.right.text-right > img /* Profile Image/Sidebar Images */ {
+        
+        border: 1px solid #151a0e;
+        border-radius: 0px;
+        
+    }
+    
+     /* ----- Wolf Icons ----- */
+    
+    
+    #main .card-body {
+        
+        border: 1px solid #151a0e;
+        border-radius: 0px;
+        background-color: #374127bc!important;
+        
+    }
+    #main > form > table > tbody > tr > td > div > div > div > div > a > div {
+        
+        border-radius: 0px!important;
+        background-color: #222916!important;
+        color: #79883b!important;
+    }
+    
+    #main > form > table > tbody > tr > td > div > div > div > div > a > img {
+        
+        border-radius: 0px!important;
+        
+    }
