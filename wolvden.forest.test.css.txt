@@ -1,6 +1,4 @@
- 
-    
-    .table {
+ .table {
         
         background-color: rgb(105, 117, 52, 0.5);
         border: 1px solid rgb(121, 136, 59, 0.7);;
@@ -99,3 +97,4 @@
         border-radius: 0px!important;
         
     }
+
