@@ -1,102 +1,74 @@
-/* WOLVDEN PROFILE CSS — Forest Theme (Dark Green) */
-/* Paste this into your "Den → Settings → Profile CSS" */
-
-/* ===== BACKGROUND ===== */
-body {
-    background: url('https://wallpaperbat.com/img/226887-forest-trees-nature-wallpaper-2560x1600.jpg') no-repeat center center fixed !important;
-    background-size: cover !important;
-    color: #f2f2e9 !important;
-}
 
 /* ===== TRANSPARENT GLOW BANNER ===== */
 #main h1, #main h2.page-title {
-    background: rgba(15, 40, 20, 0.45) !important;
-    padding: 12px 20px !important;
-    border-bottom: 2px solid #1e3a24 !important;
-    box-shadow: 0 0 20px #1e5c2f !important;
-    text-shadow: 0 0 10px #1e8c4f !important;
-    border-radius: 10px;
+background: rgba(15, 40, 20, 0.45) !important;
+padding: 12px 20px !important;
+border-bottom: 2px solid #1e3a24 !important;
+box-shadow: 0 0 20px #1e5c2f !important;
+text-shadow: 0 0 10px #1e8c4f !important;
+border-radius: 10px;
 }
 
+
 /* ===== PANELS / CONTAINERS ===== */
+.sidebar { background: rgba(10, 30, 15, 0.20) !important; }
+
+
 .main, .sidebar, .box, .content, .table, .table .row, .container {
-    background: rgba(10, 30, 15, 0.55) !important;
-    border: 2px solid #194d2c !important;
-    border-radius: 20px !important;
-    box-shadow: 0 0 15px #145c33 !important;
+background: rgba(10, 30, 15, 0.30) !important;
+border: 2px solid #194d2c !important;
+border-radius: 20px !important;
+box-shadow: 0 0 15px #145c33 !important;
 }
+
 
 /* ===== TEXT COLOR ===== */
 body, h1, h2, h3, p, a, span, div {
-    color: #f2f2e9 !important;
+color: #f2f2e9 !important;
 }
+
 
 /* ===== WOLF CIRCULAR PORTRAITS ===== */
 .wolf-avatar, .lead-wolf img, img[src*="dynasty"], .featured-wolf img {
-    width: 200px !important;
-    height: 200px !important;
-    border-radius: 50% !important;
-    border: 4px solid #1e5c2f !important;
-    box-shadow: 0 0 20px #1e5c2f !important;
-    object-fit: cover !important;
+width: 200px !important;
+height: 200px !important;
+border-radius: 50% !important;
+border: 4px solid #1e5c2f !important;
+box-shadow: 0 0 20px #1e5c2f !important;
+object-fit: cover !important;
 }
+
 
 /* ===== NAVIGATION HALF-OVALS ===== */
 .navbar a, .menu-item, #sidebar a[href*="overview"], #sidebar a[href*="breeding"], #sidebar a[href*="dynasty"], #sidebar a[href*="pupsitting"], #sidebar a[href*="nesting"], #sidebar a[href*="socializing"] {
-    display: inline-block !important;
-    padding: 8px 14px !important;
-    background: rgba(20, 60, 30, 0.6) !important;
-    border: 2px solid #1e5c2f !important;
-    border-radius: 0 0 40px 40px !important;
-    box-shadow: 0 0 12px #1e5c2f !important;
-    color: #f2f2e9 !important;
-    margin: 3px !important;
+display: inline-block !important;
+padding: 8px 14px !important;
+background: rgba(20, 60, 30, 0.6) !important;
+border: 2px solid #1e5c2f !important;
+border-radius: 0 0 40px 40px !important;
+box-shadow: 0 0 12px #1e5c2f !important;
+color: #f2f2e9 !important;
+margin: 3px !important;
 }
 .navbar a:hover, .menu-item:hover, #sidebar a:hover {
-    background: rgba(25, 80, 40, 0.8) !important;
+background: rgba(25, 80, 40, 0.8) !important;
 }
 
 /* ===== STATS BARS (energy/hunger/hp/exp) ===== */
 .energyBar, .hungerBar, .hpBar, .expBar, .bar, .progress {
-    background: #0f2716 !important;
-    border-radius: 10px !important;
-    border: 1px solid #1e5c2f !important;
-    overflow: hidden !important;
+background: #0f2716 !important;
+border-radius: 10px !important;
+border: 1px solid #1e5c2f !important;
+overflow: hidden !important;
 }
 .energyBar .fill, .hungerBar .fill, .hpBar .fill, .expBar .fill, .bar .fill, .progress div {
-    background: #1e8c4f !important;
-    height: 18px !important;
-    box-shadow: inset 0 0 10px #145c33 !important;
+background: #1e8c4f !important;
+height: 18px !important;
+box-shadow: inset 0 0 10px #145c33 !important;
 }
+
 
 /* ===== ICONS — tinted green ===== */
 img.icon, .small-icon, img[src*="icon"] {
-    filter: brightness(0) saturate(100%) invert(30%) sepia(50%) saturate(500%) hue-rotate(95deg) brightness(95%) contrast(90%) !important;
+filter: brightness(0) saturate(100%) invert(30%) sepia(50%) saturate(500%) hue-rotate(95deg) brightness(95%) contrast(90%) !important;
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forest Theme Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="main container">
-        <h1>Welcome to the Forest!</h1>
-        <p>This page is styled with a dark green forest theme, glassy panels, and elegant buttons.</p>
-
-        <div class="box">
-            <h2>Panel Example</h2>
-            <p>This is a panel with semi-transparent background and blurred backdrop.</p>
-            <button class="btn">Click Me</button>
-        </div>
-
-        <img src="https://wallpapers.com/images/hd/dark-green-forest-1920-x-1200-5xzwr29uzh1qw10h.jpg" alt="Forest Image">
-
-        <p class="muted">This is muted text for secondary info.</p>
-    </div>
-</body>
-</html>
-
-
