@@ -73,3 +73,30 @@ body, h1, h2, h3, p, a, span, div {
 img.icon, .small-icon, img[src*="icon"] {
     filter: brightness(0) saturate(100%) invert(30%) sepia(50%) saturate(500%) hue-rotate(95deg) brightness(95%) contrast(90%) !important;
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Theme Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main container">
+        <h1>Welcome to the Forest!</h1>
+        <p>This page is styled with a dark green forest theme, glassy panels, and elegant buttons.</p>
+
+        <div class="box">
+            <h2>Panel Example</h2>
+            <p>This is a panel with semi-transparent background and blurred backdrop.</p>
+            <button class="btn">Click Me</button>
+        </div>
+
+        <img src="https://wallpapers.com/images/hd/dark-green-forest-1920-x-1200-5xzwr29uzh1qw10h.jpg" alt="Forest Image">
+
+        <p class="muted">This is muted text for secondary info.</p>
+    </div>
+</body>
+</html>
+
+
